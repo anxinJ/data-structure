@@ -4,6 +4,10 @@ package codewars.kyu6;
 import java.util.stream.Stream;
 
 /**
+ * eg.bitcoin take over the world maybe who knows perhaps
+ * return 3
+ * eg.turns out random test cases are easier than writing out basic ones
+ * return 3
  * Created by hewj on 17/6/14.
  */
 public class ShortestWord {
