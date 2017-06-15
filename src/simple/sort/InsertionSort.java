@@ -24,11 +24,12 @@ public class InsertionSort extends SortBase {
         for(int i=1;i<nums.length;i++){
             int tmp = nums[i];
             int in = i;
-            while(in>0&&nums[in-1]>tmp) {
+            while(in>0&&nums[in-1]>=tmp) {
                 // in<=0 会短路,不进行比较
                 if(in > 0){
                     compareCount++;
                 }
+                // if(nums[in-1] == tmp) tmp = -1; //置为-1后,改变容量实现去重
                 nums[in] = nums[in-1];
                 copyCount++;
                 in--;
@@ -75,16 +76,17 @@ public class InsertionSort extends SortBase {
         InsertionSort is = new InsertionSort();
 //        nums = is.noDups(nums);
 //        PrintUtil.print(nums);
-        int maxSize = 50;
-        nums = new int[maxSize];
-        for(int i=0;i<maxSize;i++){
-            nums[i] = i;
-        }
-        is.swap(nums, 40, 20);
-        is.swap(nums, 30, 25);
-        is.swap(nums, 10, 0);
-        is.swap(nums, 15, 35);
-        is.swap(nums, 24, 28);
+//        int maxSize = 50;
+//        nums = new int[maxSize];
+//        for(int i=0;i<maxSize;i++){
+//            nums[i] = i;
+//        }
+//        is.swap(nums, 40, 20);
+//        is.swap(nums, 30, 25);
+//        is.swap(nums, 10, 0);
+//        is.swap(nums, 15, 35);
+//        is.swap(nums, 24, 28);
         is.sort(nums);
+        PrintUtil.print(nums);
     }
 }
