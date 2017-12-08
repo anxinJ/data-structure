@@ -1,9 +1,5 @@
 package utils;
 
-import com.sun.tools.javac.util.StringUtils;
-
-import java.util.Arrays;
-
 /**
  * Created by hewj on 17/6/13.
  */
